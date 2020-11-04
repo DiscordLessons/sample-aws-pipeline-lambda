@@ -1,4 +1,4 @@
-# A CI/CD Pipeline for an AWS Lambda function
+# A CI/CD pipeline for an AWS Lambda function
 
 ##### This project has the following requirements:
   - A function which takes 'h' as input and returns the post with the deepest comment thread on HackerNews, in the past *h* hours.
