@@ -31,7 +31,7 @@
     1. Clone the repository.
     2. Install Docker.
     3. Run | `docker build --target unittest test/unit/` | to run the unit tests.
-    4. Run | `docker build --target integration test/integration/` | to run the integration tests. (WIP. Requires a PostgreSQL server).
+    4. Run | `docker build --target integrationtest test/integration/` | to run the integration tests. (WIP. Requires a PostgreSQL server).
     5. Run | `./build.sh` | to package the Python application into a `.zip` file.
 
 ##### Implementation Details
