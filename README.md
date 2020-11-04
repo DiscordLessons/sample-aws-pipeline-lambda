@@ -5,7 +5,7 @@
   - The CI/CD infrastructure to deploy to production.
 
 ##### Notes
-  - The API endpoint ('hours' query string parameter required): [API](https://ot0rnmj6o7.execute-api.us-east-2.amazonaws.com/prod/prodLambdaFunction?hours=9)
+  - The API endpoint ('hours' query string parameter required): [API](https://ot0rnmj6o7.execute-api.us-east-2.amazonaws.com/prod/prodLambdaFunction)
   - The deployed function does not perform the original task asked of the project, however the code for that is still included. The AWS API Gateway service has hard timeout of 30 seconds. I realized this too late.
   - The Python function for parsing the HackerNews API is located in: `extras/standalone/main.py`.
   - The unit and integration tests are bare-bones and are just enough to demonstrate a functional pipeline.
