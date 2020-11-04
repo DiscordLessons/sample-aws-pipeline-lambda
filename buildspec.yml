@@ -1,0 +1,22 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - yum update -y
+      - yum install -y glibc-langpack-en epel-release python3 python3-pip gpgme
+  pre_build:
+    commands:
+      - echo . . . Running Unit Tests . . .
+      - docker build --target unittest test/unit/
+      - echo ... Running Integration Tests . . .
+      - echo Nothing for now.
+  build:
+    commands:
+      - echo . . . Running Build Steps . . .
+      - ./build.sh
+      - echo $?
+  post_build:
+    commands:
+      - echo . . . Running Post Build Steps . . .
+      - echo Nothing for now.
