@@ -19,10 +19,6 @@ if [ -z "$BRANCH_NAME" ]; then
   echo "On master branch. Starting build."
   build
   echo "Uploading."
-  # Not acceptable for production use.
-  export AWS_ACCESS_KEY_ID=AKIAT2O3NY6RV2EKMF3N
-  export AWS_SECRET_ACCESS_KEY=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
-  export AWS_DEFAULT_REGION=us-east-2
   aws s3 cp python_function.zip s3://bwijayaw-riiid-production --acl bucket-owner-full-control
 else
   echo "On branch: ${BRANCH_NAME}. Starting build."
